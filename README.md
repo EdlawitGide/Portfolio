@@ -14,7 +14,6 @@ This portfolio is built using the following technologies:
 - 🌐 **HTML** - The backbone of my web creations!
 - 🎨 **CSS** - Making things pretty and stylish!
 - 🚀 **JavaScript** - Adding interactivity and fun!
-- [Any other technologies or frameworks you used, e.g., React, Bootstrap, etc.]
 
 
 
