@@ -7,8 +7,6 @@ Welcome to my personal portfolio website! 🎉 This site showcases my skills, pr
 
 ## 💖 About Me
 Hello! I'm Edlawit Gide, a passionate CIT Student and Aspiring Software Engineer based in Minnesota. 🌍  My goal is to create engaging and user-friendly experiences that make a difference.
-When I'm not immersed in code, you'll find me unraveling the mysteries of thrilling novels or vibing to the soulful rhythms of R&B, my ultimate escapes.
-
 
 ## 💻 Technologies Used
 This portfolio is built using the following technologies:
