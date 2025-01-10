@@ -1,6 +1,6 @@
 # 🌟 Personal Portfolio Website 🌟
 
-Welcome to my personal portfolio website! 🎉 This site showcases my skills, projects, and experiences as a **[Your Profession/Field, e.g., Web Developer, Graphic Designer, etc.]**. I’m excited to share my journey with you! 💖
+Welcome to my personal portfolio website! 🎉 This site showcases my skills, projects, and experiences as a Computer Information Technology Major and an Aspiring Software Engineer. I’m excited to share my journey with you! 💖
 
 
 ## 💖 About Me
