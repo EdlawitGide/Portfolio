@@ -71,8 +71,11 @@ a:hover {
 
 #hamburger-nav {
   display: none;
-  background: linear-gradient(90deg, #fcd5d5, #f9faf9); /* Optional: Add some padding for better appearance */
-}
+  background: linear-gradient(
+    90deg,
+    #fcd5d5,
+    #f9faf9
+  ); /* Optional: Add some padding for better appearance */
 }
 
 .hamburger-menu {
