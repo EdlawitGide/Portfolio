@@ -22,6 +22,15 @@ p {
   letter-spacing: normal;
 }
 
+/* Title Colors for About Section */
+.about-title {
+  color: #9e3c46; /* Blue color for h1 */
+}
+
+.about-subtitle {
+  color: #a04e81; /* Red color for h2 and h3 */
+}
+
 /* TRANSITION */
 
 a,
