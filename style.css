@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(205, 181, 181);
+  background-color: rgb(235, 235, 235);
 }
 
 html {
@@ -24,7 +24,7 @@ p {
 
 /* Title Colors for About Section */
 .about-title {
-  color: #9e3c46; /* Blue color for h1 */
+  color: #aeadae; /* Blue color for h1 */
 }
 
 .about-subtitle {
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .logo:hover {
@@ -188,7 +188,7 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 300px;
+  height: 275px;
   width: 300px;
   margin: auto 0;
 }
@@ -204,16 +204,18 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  color: rgb(42, 42, 42);
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .title {
   font-size: 2rem;
   text-align: center;
+  color: rgb(92, 91, 91);
 }
 
 #socials-container {

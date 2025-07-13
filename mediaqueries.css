@@ -96,8 +96,11 @@
   }
   .title {
     font-size: 2rem;
+    color: darkgray;
   }
   .text-container {
-    text-align: justify;
+    text-align: center;
+    font-size: 0.24rem;
+    color: darkgrey;
   }
 }
