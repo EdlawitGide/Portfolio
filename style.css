@@ -17,10 +17,14 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
-  word-spacing: normal;
-  letter-spacing: normal;
+  color: rgb(85, 85, 85);       /* soft gray for easy reading */
+  font-size: 18px;              /* slightly larger text */
+  line-height: 1.7;             /* more breathing room between lines */
+  letter-spacing: 0.5px;        /* subtle tracking for a polished look */
+  word-spacing: 1px;            /* slight extra space between words */
+  margin-bottom: 1.5rem;        /* space below each paragraph */
 }
+
 
 /* Title Colors for About Section */
 .about-title {
@@ -354,13 +358,10 @@ section {
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.2rem;
-  justify-content: space-around;
+  max-width: 90%; /* smaller than full width */
+  margin: 0 auto;  /* center it */
 }
+
 
 article {
   display: flex;
@@ -450,3 +451,29 @@ footer {
 footer p {
   text-align: center;
 }
+
+.about-image-container {
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px; /* adjust the value for more/less curve */
+}
+
+.skills-list {
+  list-style-type: none; /* removes bullets */
+  padding: 0;
+  margin: 1rem 0; /* space above and below the entire list */
+}
+
+.skills-list li {
+  margin-bottom: 1.5rem; /* space between each skill */
+  line-height: 1.6;       /* makes text easier to read */
+}
+
