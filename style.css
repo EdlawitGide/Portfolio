@@ -477,3 +477,241 @@ footer p {
   line-height: 1.6;       /* makes text easier to read */
 }
 
+/* Bounce animation keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Moves up slightly */
+  }
+  60% {
+    transform: translateY(-5px); /* Smaller bounce back */
+  }
+}
+
+/* Apply the bounce animation to the About Me button */
+.btn.btn-color-2 {
+  animation: bounce 2s infinite; /* 2-second cycle, repeats forever */
+  transition: transform 0.3s ease; /* Smooth hover effect if you want */
+}
+
+/* Optional: Make it bounce more on hover for extra fun */
+.btn.btn-color-2:hover {
+  animation-duration: 1s; /* Speeds up on hover */
+}
+/* Base style for floating flowers */
+.floating-flower {
+  position: fixed; /* Sticks to viewport corners */
+  width: 50px; /* Size of the flower */
+  height: 50px;
+  background: rgba(255, 182, 193, 0.6); /* Light pink with transparency */
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Flower-like shape */
+  opacity: 0.7; /* Semi-transparent vibe */
+  z-index: -1; /* Behind content, so it doesn't interfere */
+  pointer-events: none; /* Doesn't block clicks */
+}
+
+/* Add petals for a flower look (using pseudo-elements) */
+.floating-flower::before,
+.floating-flower::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 182, 193, 0.6);
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+}
+
+.floating-flower::after {
+  top: -10px;
+  right: -10px;
+}
+
+/* Position in corners */
+.flower-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.flower-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.flower-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.flower-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-5px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(5px) translateX(5px) rotate(5deg);
+  }
+}
+/* Style the flower emoji */
+.floating-flower {
+  position: fixed;
+  font-size: 40px; /* Size of the flower */
+  color: rgba(5, 5, 5, 0.7); /* Hot pink with transparency */
+  opacity: 0.8;
+  z-index: -1; /* Try changing this to 0 or 1 if it's getting covered */
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Position in corners */
+.flower-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.flower-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.flower-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.flower-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-5px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(5px) translateX(5px) rotate(5deg);
+  }
+}
+
+.floating-flower {
+  animation: float 6s ease-in-out infinite;
+}
+
+.flower-top-left {
+  animation-duration: 7s;
+}
+
+.flower-top-right {
+  animation-duration: 5s;
+}
+
+.flower-bottom-left {
+  animation-duration: 8s;
+}
+
+.flower-bottom-right {
+  animation-duration: 6s;
+}
+
+/* Minion popup container */
+.minion-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; /* Above other content */
+  display: flex;
+  align-items: center;
+  opacity: 0; /* Starts hidden */
+  animation: minion-appear 5s ease-in-out 2s forwards; /* Appears after 2s, lasts 5s total */
+}
+
+/* Minion image */
+.minion-image {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Speech bubble */
+.speech-bubble {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  display: none; /* Hidden initially */
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #000;
+}
+
+/* Animation keyframes */
+@keyframes minion-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  40% {
+    /* Show speech bubble */
+  }
+  60% {
+    /* Keep visible */
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+  }
+}
+
+/* Show speech bubble during animation */
+.minion-popup {
+  animation-fill-mode: forwards;
+}
+
+/* Use JavaScript to toggle speech bubble visibility (optional for timing) */
+.minion-image {
+  display: none; /* hide by default */
+  width: 100px;  /* adjust size */
+  height: auto;
+}
